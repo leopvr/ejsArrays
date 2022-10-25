@@ -232,7 +232,12 @@ const jsonPlaceholder = [
   ]
 console.log(jsonPlaceholder)
 
+// for (let i = 0; i < jsonPlaceholder.length; i++) {
+//     let nameArray = jsonPlaceholder[i];  
+//     console.log(`El usuario ${nameArray.id} se llama: ${nameArray.name}, su username: ${nameArray.username}, y vive en: ${nameArray.address.street} con latitud ${nameArray.address.geo.lat} y longitud ${nameArray.address.geo.lng}`); 
+// }
+
 for (let i = 0; i < jsonPlaceholder.length; i++) {
-    let nameArray = jsonPlaceholder[i];  
-    console.log(`El usuario ${nameArray.id} se llama: ${nameArray.name}, su username: ${nameArray.username}, y vive en: ${nameArray.address.street} con latitud ${nameArray.address.geo.lat} y longitud ${nameArray.address.geo.lng}`); 
+  console.log(`El usuario ${jsonPlaceholder[i].id} se llama: ${jsonPlaceholder[i].name}, su username: ${jsonPlaceholder[i].username}, y vive en: ${jsonPlaceholder[i].address.street} con latitud ${jsonPlaceholder[i].address.geo.lat} y longitud ${jsonPlaceholder[i].address.geo.lng}`); 
 }
+
